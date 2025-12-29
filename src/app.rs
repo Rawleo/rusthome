@@ -96,7 +96,7 @@ fn Projects() -> impl IntoView {
             tag: "Research",
             title: "GeneZippers: DNA Compression",
             description: "Analysis of early DNA compression algorithms comparing Huffman Coding, DNAzip, and Biocompress 1 for genomic data.",
-            link: Some("/project/genezippers"),
+            link: Some("https://www.cs.carleton.edu/cs_comps/2526/genezippers_web/website/"),
         },
         ProjectData {
             tag: "Web App",
