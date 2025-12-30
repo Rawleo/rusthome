@@ -298,9 +298,9 @@ fn Footer() -> impl IntoView {
             <div class="container">
                 <p>"© 2025 Portfolio. Built with Rust & Leptos."</p>
                 <div class="footer-links">
-                    <a href="https://github.com" target="_blank">"GitHub"</a>
-                    <a href="https://linkedin.com" target="_blank">"LinkedIn"</a>
-                    <a href="mailto:hello@example.com">"Email"</a>
+                    <a href="https://github.com/rawleo" target="_blank">"GitHub"</a>
+                    <a href="https://www.linkedin.com/in/ryanson50" target="_blank">"LinkedIn"</a>
+                    <a href="mailto:sonryan50@gmail.com">"Email"</a>
                 </div>
             </div>
         </footer>
