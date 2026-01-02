@@ -4,7 +4,12 @@ version = "0.1.0"
 edition = "2021"
 
 [lib]
+name = "portfolio_lib"
 crate-type = ["cdylib", "rlib"]
+
+[[bin]]
+name = "portfolio"
+path = "src/main.rs"
 
 [dependencies]
 leptos = { version = "0.8.0" }
@@ -15,6 +20,8 @@ leptos_axum = { version = "0.8.0", optional = true }
 leptos_meta = { version = "0.8.0" }
 tokio = { version = "1", features = ["rt-multi-thread"], optional = true }
 wasm-bindgen = { version = "0.2.106", optional = true }
+log = "0.4"
+console_log = "1.0"
 
 [features]
 hydrate = [
@@ -29,6 +36,11 @@ ssr = [
     "leptos/ssr",
     "leptos_meta/ssr",
     "leptos_router/ssr",
+]
+csr = [
+    "leptos/csr",
+    "dep:console_error_panic_hook",
+    "dep:wasm-bindgen",
 ]
 
 # Defines a size-optimized profile for the WASM bundle in release mode
