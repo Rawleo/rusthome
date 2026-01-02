@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [lib]
-name = "portfolio_lib"
+name = "portfolio"
 crate-type = ["cdylib", "rlib"]
 
 [[bin]]

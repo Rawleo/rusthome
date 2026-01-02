@@ -34,7 +34,7 @@ pub fn App() -> impl IntoView {
         <Stylesheet id="leptos" href="/pkg/portfolio.css"/>
         <Title text="Ryan Son | Rust Developer"/>
 
-        <Router base="/rusthome">
+        <Router>
             <main>
                 <Routes fallback=|| "Page not found.".into_view()>
                     <Route path=path!("/") view=HomePage/>
@@ -207,21 +207,21 @@ fn Navbar() -> impl IntoView {
     view! {
         <nav>
             <div class="logo">
-                <a href="">"Ryan Son"</a>
+                <a href="/">"Ryan Son"</a>
             </div>
             <ul class="nav-links">
                 <li>
-                    <a href="#home"
+                    <a href="/#home"
                        class:active=move || is_active("/")
                        on:click=move |_| scroll_to("home")>"Home"</a>
                 </li>
                 <li>
-                    <a href="#projects"
+                    <a href="/#projects"
                        class:active=move || is_active("/project") || current_hash.get() == "#projects"
                        on:click=move |_| scroll_to("projects")>"Projects"</a>
                 </li>
                 <li>
-                    <a href="#photos"
+                    <a href="/#photos"
                        class:active=move || is_active("/photos") || current_hash.get() == "#photos"
                        on:click=move |_| scroll_to("photos")>"Photos"</a>
                 </li>
@@ -231,7 +231,7 @@ fn Navbar() -> impl IntoView {
                 //        on:click=move |_| scroll_to("contact")>"Contact"</a>
                 // </li>
                 <li>
-                    <a href="about" class:active=move || is_active("/about")>"About"</a>
+                    <a href="/about" class:active=move || is_active("/about")>"About"</a>
                 </li>
             </ul>
         </nav>
@@ -247,7 +247,7 @@ fn Hero() -> impl IntoView {
                 <h1>"Scalable Web Apps"</h1>
                 <p>"Full-stack developer crafting high-performance web applications with Rust and other modern frameworks."</p>
                 <div class="hero-links">
-                    <a href="#projects" class="btn btn-primary hero-project-btn">"View My Work"</a>
+                    <a href="/#projects" class="btn btn-primary hero-project-btn">"View My Work"</a>
                     <a href="https://github.com/rawleo" class="btn btn-secondary" target="_blank">"GitHub"</a>
                     <a href="https://www.linkedin.com/in/ryanson50" class="btn btn-secondary" target="_blank">"LinkedIn"</a>
                     <a href="mailto:sonryan50@gmail.com" class="btn btn-secondary">"Email"</a>
