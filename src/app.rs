@@ -137,9 +137,6 @@ fn ProjectDetail(project: Project) -> impl IntoView {
                                 {move || project.live_link.map(|link| view! {
                                     <a href=link target="_blank" class="btn btn-secondary">"Live Site"</a>
                                 })}
-                                {move || project.live_link.map(|link| view! {
-                                    <a href=link target="_blank" class="btn btn-secondary">"Live Site"</a>
-                                })}
                             </div>
                         </div>
                     </div>
@@ -255,8 +252,8 @@ fn Hero() -> impl IntoView {
         <section class="hero" id="home">
             <div class="container hero-content">
                 <img src="images/headshot.jpg" alt="Profile" class="hero-image"/>
-                <h1>"Scalable Web Apps"</h1>
-                <p>"Full-stack developer crafting high-performance web applications with Rust and other modern frameworks."</p>
+                <h1>"From frontend to backend—designed to scale"</h1>
+                <p>"Full-stack developer crafting high-performance applications with Rust and other modern frameworks."</p>
                 <div class="hero-links">
                     <a href="./#projects" class="btn btn-primary hero-project-btn">"View My Work"</a>
                     <a href="https://github.com/rawleo" class="btn btn-secondary" target="_blank">"GitHub"</a>
