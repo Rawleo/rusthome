@@ -331,9 +331,10 @@ fn About() -> impl IntoView {
                         <img src="images/headshot.jpg" alt="Ryan Son" class="about-image"/>
                     </div>
                     <div class="about-text">
-                        <p>"Hello! I'm Ryan Son, a junior full-stack developer and soon to be graduate of Carleton College. I'm passionate about crafting scalable web applications with Rust and other modern frameworks."</p>
-                        <p>"My journey in software development is driven by a curiosity for how complex systems work and a desire to build tools that make a real impact. With a background in research and a keen interest in high-performance computing, I find Rust to be the perfect tool for building robust, efficient software."</p>
+                        <p>"Hello! I'm Ryan Son, a junior full-stack developer and soon to be graduate of Carleton College. I'm crazy passionate about crafting scalable, fast, and efficient applications."</p>
+                        <p>"My journey in software development is driven by a curiosity for how complex systems work and a desire to build tools that make a real impact. With a background in research and a keen interest in high-performance computing, I love finding ways to improve the performance of my applications."</p>
                         <p>"When I'm not coding, you can find me exploring new technologies, home-labbing, or capturing the world through my lens (as seen in my Photos section!)."</p>
+                        <p>"Thank you for stopping by!"</p>
                         <p>"I'm currently looking for full-time opportunities, so feel free to reach out!"</p>
                     </div>
                 </div>
