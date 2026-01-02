@@ -3,7 +3,7 @@ use leptos_meta::{provide_meta_context, MetaTags, Stylesheet, Title};
 use leptos_router::{
     components::{Route, Router, Routes},
     hooks::{use_location, use_params_map},
-    path, // <--- Crucial import for path! macro
+    path,
 };
 
 use crate::data::{get_project_by_id, get_projects, Project};
@@ -253,7 +253,7 @@ fn Hero() -> impl IntoView {
             <div class="container hero-content">
                 <img src="images/headshot.jpg" alt="Profile" class="hero-image"/>
                 <h1>"From frontend to backend—designed to scale"</h1>
-                <p>"Full-stack developer crafting high-performance applications with Rust and other modern frameworks."</p>
+                <p>"Full-stack developer crafting high-performance applications."</p>
                 <div class="hero-links">
                     <a href="./#projects" class="btn btn-primary hero-project-btn">"View My Work"</a>
                     <a href="https://github.com/rawleo" class="btn btn-secondary" target="_blank">"GitHub"</a>
@@ -341,16 +341,6 @@ fn About() -> impl IntoView {
         </section>
     }
 }
-
-// #[component]
-// fn Contact() -> impl IntoView {
-//     view! {
-//         <section class="contact-container" id="social-links">
-//             // <h2 class="section-title">"Contact Links"</h2>
-//
-//         </section>
-//     }
-// }
 
 #[component]
 fn Footer() -> impl IntoView {

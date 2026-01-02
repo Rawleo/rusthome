@@ -47,7 +47,7 @@ pub fn get_projects() -> Vec<Project> {
             tag: "Web App",
             description: "A high-performance portfolio website built with Rust and Leptos, featuring modern design and seamless navigation.",
             overview: "Built to demonstrate the capabilities of WebAssembly and Rust in frontend development. This site features fine-grained reactivity, signal-based state management, and type-safe routing. It is fully typed and compiled to WASM for near-native performance.",
-            role: "Frontend Developer",
+            role: "Full-Stack Developer",
             technologies: vec!["Rust", "Leptos", "WASM", "SCSS", "Trunk"],
             live_link: Some("https://rawleo.github.io/home/"),
             code_link: Some("https://github.com/Rawleo/home"),
